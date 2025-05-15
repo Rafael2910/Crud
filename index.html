@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>CRUD - Nova Tarefa</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="menu-btn"></div>
+      <img class="logo" src="./assets/1200x600wa-removebg-preview-removebg-preview.png" alt="Logo" />
+      <p class="condominio"><b>Seu <br> Condomínio</b></p>
+
+      <span class="class">
+        <div class="square"></div>
+        <div class="text"><b>Bosque do Cerrado</b></div> <img class="seta" src="./assets/down-arrow.png" alt="">
+      </span>
+      <span class="profile">
+        <p class="login">Rogério </p> <button id="btn">Sair</button>
+      </span>
+    </div>
+
+  </header>
+
+  <main class="form-area">
+    <div style="text-align: center;">
+      <button id="btnMostrarFormulario" class="botao-cadastrar">
+        <i class="fas fa-plus"></i> Cadastrar Tarefa
+      </button>
+    </div>
+
+    <div class="form-box" id="formBox" style="display: none;">
+      <h2>Nova Tarefa</h2>
+      <form>
+        <label for="titulo">Nome da Tarefa:</label>
+<input type="text" id="titulo" name="titulo" maxlength="30" placeholder="Digite o título da tarefa" />
+
+<label for="data">Início:</label>
+<input type="date" id="dataInicio" name="data" /> <label for="data">Conclusão:</label>
+<input type="date" id="dataFim" name="data" />
+
+<label for="responsavel">Custo Estimado (R$):</label>
+<input type="number" id="responsavel" name="responsavel" maxlength="10" placeholder="Digite o custo estimado R$" />
+        <label for="status">Status da Tarefa</label>
+        <select id="status" name="status">
+          <option value="pendente">Pendente</option>
+          <option value="em_andamento">Em Andamento</option>
+          <option value="concluida">Concluída</option>
+        </select>
+
+
+        <div class="botoes">
+          <button type="submit">Salvar</button>
+          <button type="reset">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+</body>
+<script src="index.js"></script>
+</html>

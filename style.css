@@ -1,0 +1,453 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+  }
+  
+body {
+    background-color: #CADCE0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+header {
+    background-color: #0072B6;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 100px;
+    cursor: pointer;
+}
+
+.condominio {
+    position: absolute;
+    margin-left: 11%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.class {
+    display: flex;
+    padding: 20rem;
+    margin-left: 1000px;
+
+}
+
+.profile {
+    display: flex;
+    position: absolute;
+    margin-left: 45rem;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    margin-left: 90%;
+    gap: 10px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: #CADCE0;
+    border-radius: 10px;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #326387;
+    background-color: #CADCE0;
+    border-radius: 5px;
+}
+
+.seta {
+
+    background-color: #1B5F90;
+    height: 40px;
+    border-radius: 5px;
+}
+.login{
+    color: white;
+}
+#btn{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-btn::before {
+    top: -10px;
+}
+
+.menu-btn::after {
+    top: 10px;
+}
+
+.form-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #0072B6;
+    text-align: center;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#btnMostrarFormulario{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0072B6;
+}
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0072B6;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botoes button[type="reset"] {
+    background-color: #ccc;
+    color: #000;
+}
+/* Estilo da lista de tarefas */
+.tarefa {
+    background-color: #ffffff;
+    border: 1px solid #0072B6;
+    border-left: 5px solid #0072B6;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .tarefa:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* Ícone de edição */
+  .tarefa i.fas.fa-pencil-alt {
+    font-size: 18px;
+    color: #0072B6;
+    transition: transform 0.2s;
+  }
+  .tarefa i.fas.fa-pencil-alt:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Área de edição */
+  .edicao {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edicao label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .edicao input,
+  .edicao textarea,
+  .edicao select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edicao .botoes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edicao .botoes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .edicao .botoes .salvar {
+    background-color: #0072B6;
+  }
+  
+  .edicao .botoes .salvar:hover {
+    background-color: #005b92;
+  }
+  
+  .edicao .botoes .excluir {
+    background-color: #e74c3c;
+  }
+  
+  .edicao .botoes .excluir:hover {
+    background-color: #c0392b;
+  }
+  
+  
+  /* Comentários */
+  .comentarios {
+    margin-top: 25px;
+    background-color: #f1f8fb;
+    padding: 15px;
+    border-left: 4px solid #0072B6;
+    border-radius: 5px;
+  }
+  
+  .comentarios h4 {
+    margin-bottom: 10px;
+    color: #0072B6;
+  }
+  
+  .comentarios p {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .comentarios .ver-mais {
+    background-color: #0072B6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .comentarios .ver-mais:hover {
+    background-color: #005b92;
+  }
+  /* Estilização global para <select> */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    appearance: none; /* Remove a seta padrão no Chrome */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'7'%20viewBox%3D'0%200%2010%207'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M0%200l5%207%205-7z'%20fill%3D'%230072B6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 7px;
+  }
+  
+  /* Ao focar */
+  select:focus {
+    border-color: #0072B6;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 114, 182, 0.5);
+  }
+  
+
+
+
+  @media (max-width: 1890px) {
+
+    header {
+        flex-direction:column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+      }
+    
+      .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      .logo {
+        height: 80px;
+        margin-left: -60px;
+      }
+    
+      .condominio {
+        position: static;
+        margin: 0;
+        font-size: 1.2rem;
+        margin-left: -40px;
+      }
+    
+      .class {
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+      }
+    
+      .profile {
+        position: static;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      .text{
+        margin: 5px 0;
+        width: 100px;
+        font-size: 15px;
+      }
+
+
+
+  }
+
+  @media (max-width: 767px) {
+    header {
+      flex-direction: row;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .container {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .logo {
+      height: 80px;
+      margin-left: -80px;
+    }
+  
+    .condominio {
+      position: static;
+      margin: 0;
+      font-size: 1.2rem;
+      margin-left: -50px;
+      width: 30px;
+    }
+  
+    .class {
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      display: flex;
+      margin-left: 100px;
+      width: 30px;
+    }
+  
+    .profile {
+      position: static;
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+      
+      margin-top: -70px;
+      width: 20px;
+    }
+  
+    .square, .text, .seta {
+      margin: 5px 0;
+      width: 50px;
+      font-size: 10px;
+    }
+    .text{
+      width: 100px;
+    }
+  }
+  .form-area, .fas fa-plus{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
